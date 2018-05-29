@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>Cebu Landmasters Masters Class - Seller Rewards Program</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/styles.css">
+            <link rel="stylesheet" href="css/responsive.css">
+            <link rel="stylesheet" href="css/slick.css"/>
+            <link href="css/vanillaCalendar.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/jPushMenu.css">
+                <!-- if="" lt="" IE="" 9="">
+                <script src="js/html5.js"></script>
+                <![endif]-->
+            <!-- css3-mediaqueries.js for IE less than 9 -->
+                <!--[if lt IE 9]>
+                <script src="js/css3-mediaqueries.js"></script>
+                <![endif]--> 
+          
+                         
+    </head>
+
+
+    <body>
+      <header>
+        <aside><a href="dashboard.html"><img src="images/clm-logo2.png"></a></aside>
+        <nav class="main">
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Sales</a></li>
+            <li class="active"><a href="#">Rewards</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <button class="toggle-menu menu-right menu">MENU</button>
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+          <button class="toggle-menu menu-right">X CLOSE</button>
+          <ul>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+           
+          </ul>
+        </nav> 
+      </header>
+
+      <div id="wrapper" class="active">
+        <!-- Sidebar -->
+        <aside id="sidebar-wrapper" class="sidebar">
+          <a id="menu-toggle" class="togglebtn" href="#"><img src="images/toggle.png"></a>
+          <div class="sideprofile">
+            
+            <div class="logo"><img src="images/clm-logo2.png"></div>
+                          
+            
+            <section class="profile">
+              <aside>
+                <img src="images/profilepic.jpg">
+                <div><img src="images/badge.png"></div>
+              </aside>
+              <article>
+                <h3>Robert S. Manson</h3>
+                <h4>RANKED NO. 44</h4>
+                <h6>GOLD CLASS</h6>
+              </article>
+              <ul class="rewards">
+                <li>
+                  <h6>Available Points</h6>
+                  <h4>3,100</h4>
+                </li>
+                <li>
+                  <a href="#">Rewards Catalogue</a>
+                </li>
+                <li>
+                  <a href="#" class="active">Redeem History</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+        <!-- End of Sidebar -->
+
+        <!-- Main Dashboard -->
+        <article class="maincontent" id="page-content-wrapper">
+          <div class="sales-content">
+            <table>
+              <tr>
+                <td class="sales-side">
+                  <section class="sales">
+                    <h1>Redeem History</h1>
+                    
+                    <article>
+                      <table class="rewards-history">
+                        <tr>
+                          <td>Rewards Title</td>
+                          
+                          <td>Date Redeemed</td>
+                          <td>Points Used</td>
+                        </tr>
+                        <tr>
+                          <td><label>Reward Title:</label> Project Name</td>
+                          <td><label>Date Redeemed:</label> 02/15/18</td>
+                          <td><label>Points Used:</label> 500pts</td>
+                        </tr>
+                        <tr>
+                          <td><label>Reward Title:</label> Project Name</td>
+                          <td><label>Date Redeemed:</label> 02/15/18</td>
+                          <td><label>Points Used:</label> 500pts</td>
+                        </tr>
+                        <tr>
+                          <td><label>Reward Title:</label> Project Name</td>
+                          <td><label>Date Redeemed:</label> 02/15/18</td>
+                          <td><label>Points Used:</label> 500pts</td>
+                        </tr>
+                      </table>
+                    </article>
+                    <div class="pagination">
+                      <label>Pages:</label>
+                      <ul>
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                      </ul>
+                    </div>
+                  </section>
+
+                </td>
+                
+              </tr>
+            </table>
+          </div>
+
+          
+        </article>
+        <!-- End of Main Dashboard -->
+      </div>
+      
+
+      
+      <!-- Scripts -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <!--load jPushMenu, required-->
+      <script src="js/jPushMenu.js"></script>
+
+      <!--call jPushMenu, required-->
+      <script>
+      jQuery(document).ready(function($) {
+        $('.toggle-menu').jPushMenu();
+      });
+      </script>
+
+      <script>
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+        });
+      </script>
+
+      
+      <!-- Responsive Slide -->
+     
+      <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="js/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.featured-news').slick({
+            autoplay: true,
+            infinite: true,
+            pauseOnHover: true,
+            speed: 800,
+            swipe: true, 
+            touchMove: true
+          });
+        });
+      </script>
+      <!-- End of Responsive Slide -->
+
+      <!-- Vanilla Calendar -->
+      <script src="js/vanillaCalendar.js" type="text/javascript"></script>
+      <script>
+        window.addEventListener('load', function () {
+          vanillaCalendar.init({
+            disablePastDays: true
+          });
+        })
+      </script>
+      <!-- End of Vanilla Calendar -->
+    </body>
+
+</html>

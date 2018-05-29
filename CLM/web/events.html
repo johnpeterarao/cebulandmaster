@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>Cebu Landmasters Masters Class - Seller Rewards Program</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/styles.css">
+            <link rel="stylesheet" href="css/responsive.css">
+            <link rel="stylesheet" href="css/slick.css"/>
+            <link href="css/vanillaCalendar.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/jPushMenu.css">
+            <link rel="stylesheet" href="css/magnific-popup.css">
+                <!-- if="" lt="" IE="" 9="">
+                <script src="js/html5.js"></script>
+                <![endif]-->
+            <!-- css3-mediaqueries.js for IE less than 9 -->
+                <!--[if lt IE 9]>
+                <script src="js/css3-mediaqueries.js"></script>
+                <![endif]--> 
+          
+                         
+    </head>
+
+
+    <body>
+      <header>
+        <aside><a href="dashboard.html"><img src="images/clm-logo2.png"></a></aside>
+        <nav class="main">
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li class="active"><a href="#">Events</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+        <button class="toggle-menu menu-right menu">MENU</button>
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+          <button class="toggle-menu menu-right">X CLOSE</button>
+          <ul>
+              <ul>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+           
+          </ul>
+        </nav> 
+      </header>
+
+      <div id="wrapper" class="active">
+        <!-- Sidebar -->
+        <aside id="sidebar-wrapper" class="sidebar">
+          <a id="menu-toggle" class="togglebtn" href="#"><img src="images/toggle.png"></a>
+          <div class="sideprofile">
+            
+            <div class="logo"><img src="images/clm-logo2.png"></div>
+                          
+            
+            <section class="profile">
+              <aside>
+                <img src="images/profilepic.jpg">
+                <div><img src="images/badge.png"></div>
+              </aside>
+              <article>
+                <h3>Robert S. Manson</h3>
+                <h4>RANKED NO. 44</h4>
+                <h6>GOLD CLASS</h6>
+              </article>
+              
+              <div class="calendar">
+                <img src="images/calendarimg.jpg">
+              </div>
+            </div>
+          </section>
+        </aside>
+        <!-- End of Sidebar -->
+
+        <!-- Main Dashboard -->
+        <article class="maincontent" id="page-content-wrapper">
+          <div class="pagewrapper">
+            <h1>Events 
+              <span>
+                <select>
+                  <option>February 2017</option>
+                </select>
+              </span>
+            </h1>
+            <ul class="events">
+              <li>
+                <article class="reward">
+                 
+                  <div>
+                    <h3>02/15/18</h3>
+                  </div>
+                  <a href="#rewards-details" class="open-popup-link">
+                    <img src="images/product.jpg">
+                  </a>
+                </article>
+              </li>
+              <li>
+                <article class="reward">
+                  <div>
+                    <h3>Points
+                      <span>1/10</span>
+                    </h3>
+                  </div>
+                  <img src="images/product.jpg">
+                </article>
+              </li>
+              <li>
+                <article class="reward">
+                  <div>
+                    <h3>Points
+                      <span>1/10</span>
+                    </h3>
+                  </div>
+                  <img src="images/product.jpg">
+                </article>
+              </li>
+              <li>
+                <article class="reward">
+                  <div>
+                    <h3>Points
+                      <span>1/10</span>
+                    </h3>
+                  </div>
+                  <img src="images/product.jpg">
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          
+        </article>
+        <!-- End of Main Dashboard -->
+      </div>
+      
+      <!-- Inline Popup -->
+      <div id="rewards-details" class="white-popup mfp-hide">
+        <section class="event-details">
+          <h3>Event Title</h3>
+          <aside>
+            <img src="images/product.jpg">
+          </aside>
+          <article>
+            <h4>Date: <span>02/15/18</span></h4>
+            
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis nisl nec volutpat malesuada.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis nisl nec volutpat malesuada.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis nisl nec volutpat malesuada.</p>
+            <h5><span><a href="#">Read more on Inquirer.net</a></span></h5>
+            
+          </article>
+        </section>
+      </div>
+
+      
+      <!-- Scripts -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <!--load jPushMenu, required-->
+      <script src="js/jPushMenu.js"></script>
+
+      <!--call jPushMenu, required-->
+      <script>
+      jQuery(document).ready(function($) {
+        $('.toggle-menu').jPushMenu();
+      });
+      </script>
+
+      <script>
+        $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+        });
+      </script>
+
+      
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script type="text/javascript">
+        $('.open-popup-link').magnificPopup({
+          type:'inline',
+          midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+      </script>
+    </body>
+
+</html>
