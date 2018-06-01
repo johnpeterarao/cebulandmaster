@@ -361,7 +361,7 @@
 }
 
 @media only screen and (max-width: 1135px){
-  .projects-inner .prjinner-hldr > article .gallery .slider-nav figure { padding: 0px 5px!important;}
+  .projects-inner .prjinner-hldr > article .gallery .slider-nav figure { padding: 15px 5px!important;}
 }
 
 @media only screen and (max-width: 1100px){
@@ -424,6 +424,8 @@
 @media only screen and (max-width: 550px){
   .projects-inner .prjinner-hldr > aside { width: 100%!important; float: none!important}
   .projects-inner .prjinner-hldr > article { width: 100%!important; float: none!important;}
+  .projects-inner .prjinner-hldr > article .gallery .slider-for figure {  max-height: 380px;}
+  .projects-inner .prjinner-hldr > article .gallery .slider.slider-for.slick-initialized.slick-slider { min-height: 300px!important;}
 }
 
 @media only screen and (max-width: 479px){
